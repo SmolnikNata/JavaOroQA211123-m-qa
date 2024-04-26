@@ -25,7 +25,7 @@ public class Homework_linkedList {
             listLinked.add(i);
         }
         end = System.currentTimeMillis();
-        System.out.println("ArrayList add,  time = "+(end-start));
+        System.out.println("listLinked add,  time = "+(end-start));
 
 
         //addLast в конец
@@ -43,7 +43,7 @@ public class Homework_linkedList {
             listLinked.addLast(3);
         }
         end = System.currentTimeMillis();
-        System.out.println("ArrayList add last,  time = "+(end-start));
+        System.out.println("listLinked add last,  time = "+(end-start));
 
         listArray.clear();
         listLinked.clear();
@@ -63,7 +63,7 @@ public class Homework_linkedList {
             listLinked.addLast(3);
         }
         end = System.currentTimeMillis();
-        System.out.println("ArrayList addFirst,  time = "+(end-start));
+        System.out.println("listLinked addFirst,  time = "+(end-start));
 
         listArray.clear();
         listLinked.clear();
@@ -73,7 +73,9 @@ public class Homework_linkedList {
 
         start = System.currentTimeMillis();
         for (int i = 0; i < 500_000; i++) {
-            listArray.remove(250_000);
+            if (listArray.size() > 0){
+                listArray.remove(listArray.size() / 2);
+        }
         }
         end = System.currentTimeMillis();
         System.out.println("ArrayList remove Middle,  time = "+(end-start));
@@ -81,17 +83,21 @@ public class Homework_linkedList {
 
         start = System.currentTimeMillis();
         for (int i = 0; i < 500_000; i++) {
-            listLinked.remove(250_000);
+            if(listLinked.size()>0) {
+                listLinked.remove(listLinked.size() / 2);
+            }
         }
         end = System.currentTimeMillis();
-        System.out.println("ArrayList remove Middle,  time = "+(end-start));
+        System.out.println("listLinked remove Middle,  time = "+(end-start));
 
 
         // removeFirst  удаление сначала
 
         start = System.currentTimeMillis();
         for (int i = 0; i < 500_000; i++) {
-            listArray.removeFirst();
+            if(listArray.size()>0) {
+                listArray.removeFirst();
+            }
         }
         end = System.currentTimeMillis();
         System.out.println("ArrayList remove Middle,  time = "+(end-start));
@@ -99,17 +105,22 @@ public class Homework_linkedList {
 
         start = System.currentTimeMillis();
         for (int i = 0; i < 500_000; i++) {
-            listLinked.removeFirst();
+            if(listLinked.size()>0) {
+
+                listLinked.removeFirst();
+            }
         }
         end = System.currentTimeMillis();
-        System.out.println("ArrayList remove Middle,  time = "+(end-start));
+        System.out.println("listLinked remove Middle,  time = "+(end-start));
 
 
         //  removeLast удаление с конца
 
         start = System.currentTimeMillis();
         for (int i = 0; i < 500_000; i++) {
-            listArray.removeLast();
+            if(listArray.size()>0) {
+                listArray.removeLast();
+            }
         }
         end = System.currentTimeMillis();
         System.out.println("ArrayList remove Middle,  time = "+(end-start));
@@ -117,10 +128,12 @@ public class Homework_linkedList {
 
         start = System.currentTimeMillis();
         for (int i = 0; i < 500_000; i++) {
-            listLinked.removeLast();
+            if(listLinked.size()>0) {
+                listLinked.removeLast();
+            }
         }
         end = System.currentTimeMillis();
-        System.out.println("ArrayList remove Middle,  time = "+(end-start));
+        System.out.println("listLinked remove Middle,  time = "+(end-start));
 
 
         // removeObject удаляем по значению
