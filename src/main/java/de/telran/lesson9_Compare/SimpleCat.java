@@ -1,4 +1,4 @@
-package de.telran.lesson9;
+package de.telran.lesson9_Compare;
 
 import java.util.*;
 
@@ -50,6 +50,7 @@ public class          SimpleCat {
 
         Collections.sort(mutableCats, compareCatsWeight);
         System.out.println(mutableCats);
+
         //Comparator<Cat> compareCatsAgeWeight = new Comparator<Cat>() {// cщртируем по возрасту и весу
         //            @Override
         //            public int compare(Cat o1, Cat o2) {

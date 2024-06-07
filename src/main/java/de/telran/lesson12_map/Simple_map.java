@@ -19,7 +19,7 @@ public class Simple_map {
         map1.put(3,"Наша 3");
         System.out.println(map1);//{1=Наша новая 1, 2=Наша 2, 3=Наша 3, 5=наша 5}
 
-        //Изменение  сортировки
+        //Изменение  сортировки по ключу
         Map<Integer, String> map2 = new TreeMap<>(Comparator.reverseOrder());
         System.out.println(map2.put(2,"Наша 2"));
         System.out.println(map2.put(1,"Наша 1"));
@@ -27,7 +27,7 @@ public class Simple_map {
         map2.put(3,"Наша 3");
         System.out.println(map2);// {5=Наша 5, 3=Наша 3, 2=Наша 2, 1=Наша 1}
 
-//Просматриваем пару ключ-значение
+        //Просматриваем пару ключ-значение
         for (Map.Entry<Integer, String> el:map2.entrySet()){
             System.out.println(el.getKey() + "=" + el.getValue());
 //            5=Наша 5

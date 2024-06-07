@@ -1,4 +1,4 @@
-package de.telran.lesson9;
+package de.telran.lesson9_Compare;
 
 import java.util.Objects;
 // ссылка на лекцию: https://docs.google.com/presentation/d/17LZ-fRkYM6hwNTamQP1QueMeoJ0SObLR/edit?usp=sharing&ouid=105463127504141233206&rtpof=true&sd=true
