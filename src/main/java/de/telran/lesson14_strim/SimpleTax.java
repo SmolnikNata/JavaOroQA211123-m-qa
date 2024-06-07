@@ -1,4 +1,4 @@
-package lesson14_strim;
+package de.telran.lesson14_strim;
 
 import java.util.ArrayList;
 import java.util.List;

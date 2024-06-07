@@ -1,4 +1,4 @@
-package lessonLambda13_25_05_24;
+package de.telran.lessonLambda13_25_05_24;
 
 public class SimpleFuncInterface {
     public static void main(String[] args) {

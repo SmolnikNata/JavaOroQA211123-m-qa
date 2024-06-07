@@ -1,4 +1,4 @@
-package leson15_stream0705;
+package de.telran.leson15_stream0705;
 
 import java.io.File;
 import java.io.IOException;
